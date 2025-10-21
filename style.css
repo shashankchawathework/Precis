@@ -136,3 +136,47 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+/* About Page Specific Styles */
+
+.about-hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1598327108871-8b5c9148d84d?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.about-content, .mission-content, .contact-content {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.content-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 35px 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.about-content h2, .mission-content h2, .contact-content h2 {
+  color: #002147;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.about-content p, .mission-content p, .contact-content p {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.contact-content a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.contact-content a:hover {
+  text-decoration: underline;
+}
