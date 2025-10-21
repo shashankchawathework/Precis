@@ -3,25 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Précis | Simplifying Judgments</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- CSS -->
+  <title>Précis | Case Summaries</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Favicon (optional) -->
   <link rel="icon" href="favicon.ico">
 </head>
 <body>
 
-  <!-- Header / Navbar -->
+  <!-- Header -->
   <header>
     <div class="container header-container">
       <h1 class="logo">Précis</h1>
       <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="cases.html">Case Summaries</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -29,42 +25,35 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container hero-content">
-      <h2>Simplifying Legal Judgments</h2>
-      <p>Concise, reliable, and easy-to-understand summaries of landmark and recent cases for law students and professionals.</p>
-      <a href="cases.html" class="btn-primary">Explore Case Summaries</a>
+      <h2>Welcome to Précis</h2>
+      <p>Concise, clear, and reliable summaries of landmark legal judgments for students and professionals.</p>
     </div>
   </section>
 
-  <!-- Featured Summaries -->
-  <section class="featured">
+  <!-- Cases Section -->
+  <section class="cases">
     <div class="container">
-      <h3>Latest Summaries</h3>
-      <div class="cards-grid">
-        <div class="card">
-          <h4>Kesavananda Bharati v. State of Kerala (1973)</h4>
-          <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
-          <a href="cases.html" class="btn-small">Read More</a>
-        </div>
-        <div class="card">
-          <h4>Maneka Gandhi v. Union of India (1978)</h4>
-          <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
-          <a href="cases.html" class="btn-small">Read More</a>
-        </div>
-        <div class="card">
-          <h4>Vishaka v. State of Rajasthan (1997)</h4>
-          <p>Laid down guidelines for sexual harassment at the workplace.</p>
-          <a href="cases.html" class="btn-small">Read More</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about-preview">
-    <div class="container">
-      <h3>About Précis</h3>
-      <p><strong>Précis</strong> is an initiative by <b>Shashank Chawathe</b>, final-year BBA LL.B. student at IFIM Law School, Bengaluru. Our mission is to simplify complex legal judgments into clear, concise summaries that save time and enhance understanding for students and professionals alike.</p>
-      <a href="about.html" class="btn-primary">Learn More</a>
+      <h3>Case Summaries</h3>
+      <ul class="case-list">
+        <li>
+          <button class="case-btn">Kesavananda Bharati v. State of Kerala (1973)</button>
+          <div class="case-summary">
+            <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
+          </div>
+        </li>
+        <li>
+          <button class="case-btn">Maneka Gandhi v. Union of India (1978)</button>
+          <div class="case-summary">
+            <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
+          </div>
+        </li>
+        <li>
+          <button class="case-btn">Vishaka v. State of Rajasthan (1997)</button>
+          <div class="case-summary">
+            <p>Laid down guidelines for preventing sexual harassment at the workplace.</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -78,6 +67,17 @@
       </div>
     </div>
   </footer>
+
+  <!-- JS for dropdown summaries -->
+  <script>
+    const buttons = document.querySelectorAll('.case-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const summary = btn.nextElementSibling;
+        summary.style.display = summary.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
 
 </body>
 </html>
