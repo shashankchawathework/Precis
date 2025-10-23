@@ -1,75 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About the Creator | Précis</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Précis</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
 
-  <!-- Navbar -->
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 0.8rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .about-container {
+      max-width: 950px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .about-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .about-container p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .creator-section {
+      margin-top: 2.5rem;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 10px;
+      background-color: #fafafa;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .creator-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid #1f1f1f;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .creator-section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #1f1f1f;
+    }
+
+    .creator-section p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .contact-section {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .contact-section a {
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact-section a:hover {
+      color: #007acc;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1f1f1f;
+      color: white;
+      padding: 1rem 0;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
   <header>
-    <nav class="navbar">
-      <div class="logo">Précis</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="judgements.html">Judgements</a></li>
-        <li><a href="about.html" class="active">About the Creator</a></li>
-      </ul>
-    </nav>
+    <h1>Précis</h1>
+    <p><em>A one-stop destination for Legal Professionals and Students</em></p>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero about-hero">
-    <div class="hero-content">
-      <h1>About the Creator</h1>
-      <p class="tagline">Meet Shashank Chawathe, the mind behind Précis</p>
-    </div>
-  </section>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="judgements.html">Judgements</a>
+    <a href="about.html">About the Creator</a>
+  </nav>
 
-  <!-- About Shashank -->
-  <section class="about-content">
-    <div class="content-container">
-      <h2>Shashank Chawathe</h2>
+  <div class="about-container">
+    <h2>About Précis</h2>
+    <p>
+      <strong>Précis</strong> was created with a simple purpose — to make legal knowledge concise, accessible, and insightful for everyone. 
+      It is a platform where law students and professionals can find short, accurate summaries of landmark and recent judgments, 
+      designed to simplify legal research and encourage better understanding of judicial reasoning.
+    </p>
+    <p>
+      In today’s fast-paced legal ecosystem, staying updated with the latest judgments can be challenging. 
+      Précis aims to bridge that gap by providing structured case summaries that are easy to navigate, 
+      enabling readers to grasp complex legal concepts quickly and efficiently.
+    </p>
+    <p>
+      Whether you’re preparing for a moot court, writing a paper, or simply curious about how Indian courts interpret laws — 
+      Précis offers a starting point for your exploration of the Indian judiciary.
+    </p>
+
+    <div class="creator-section">
+      <img src="shashank.jpg" alt="Shashank Chawathe" class="creator-photo" />
+      <h3>About the Creator</h3>
       <p>
-        Shashank Chawathe is a final-year BBA LL.B student at IFIM Law School, Bengaluru, passionate about making legal knowledge 
-        accessible and understandable for students and professionals alike. With a keen interest in legal research, writing, and 
-        public speaking, Shashank aims to bridge the gap between dense legal judgments and practical learning through <strong>Précis</strong>.
+        <strong>Shashank Chawathe</strong> is a final-year BBA LL.B. student at IFIM Law School, Bengaluru, 
+        with a strong passion for legal research, public speaking, and simplifying complex legal ideas for others. 
+        As a first-generation law student, Shashank aims to make the world of law more approachable and 
+        engaging for students and professionals alike. 
       </p>
       <p>
-        Inspired by the complexities of legal texts and the challenges faced by students and professionals in navigating case law, 
-        he created Précis as a platform to summarize landmark judgments in a concise, structured, and reader-friendly way. 
-        Every summary is designed to provide clarity, insight, and an easy understanding of legal principles.
+        Précis is a reflection of his commitment to sharing knowledge and contributing to the 
+        legal community by building something valuable, practical, and enduring.
       </p>
     </div>
-  </section>
 
-  <!-- Mission Section -->
-  <section class="mission-content">
-    <div class="content-container">
-      <h2>Mission</h2>
-      <p>
-        The mission of Précis is to empower law students, professionals, and curious minds with clear and reliable legal knowledge. 
-        By transforming complex judgments into digestible summaries, Shashank envisions a platform where learning from landmark cases 
-        becomes seamless, engaging, and impactful.
+    <div class="contact-section">
+      <h3>Contact</h3>
+      <p>📩 Reach out at: 
+        <a href="mailto:shashankchawathework@gmail.com">shashankchawathework@gmail.com</a>
       </p>
     </div>
-  </section>
+  </div>
 
-  <!-- Contact Section -->
-  <section class="contact-content">
-    <div class="content-container">
-      <h2>Contact</h2>
-      <p>If you have any questions, suggestions, or collaboration ideas, feel free to reach out:</p>
-      <p>Email: <a href="mailto:shashankchawathework@gmail.com">shashankchawathework@gmail.com</a></p>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Précis | Created by Shashank Chawathe</p>
+    © 2025 Précis | Built by Shashank Chawathe
   </footer>
-
 </body>
 </html>
