@@ -180,3 +180,23 @@ footer {
 .contact-content a:hover {
   text-decoration: underline;
 }
+/* Logo Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 8px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  font-family: "Times New Roman", serif;
+}
+
