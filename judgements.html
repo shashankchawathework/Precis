@@ -1,108 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Judgements | Precis</title>
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: #f5f7fa;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #1a1a1a;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-      letter-spacing: 1px;
-    }
-
-    .case-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .case-card {
-      background: white;
-      border-radius: 12px;
-      padding: 25px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: 0.3s ease;
-    }
-
-    .case-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    }
-
-    .case-card h3 {
-      margin-top: 0;
-      font-size: 1.2rem;
-      color: #222;
-    }
-
-    .case-card p {
-      color: #555;
-      font-size: 0.95rem;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 16px;
-      background-color: #007acc;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #005fa3;
-    }
-
-    footer {
-      text-align: center;
-      background-color: #1a1a1a;
-      color: white;
-      padding: 15px 0;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Judgements | Précis</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
+  <!-- Header Section -->
   <header>
-    <h1>Landmark Judgements</h1>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="logo.png" alt="Precis Logo" class="logo">
+        <span class="logo-text">Précis</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="judgements.html" class="active">Judgements</a></li>
+        <li><a href="about.html">About the Creator</a></li>
+      </ul>
+    </div>
   </header>
 
-  <div class="case-container">
+  <!-- Judgements Section -->
+  <section class="importance">
+    <h2>Landmark Judgements</h2>
+    <p>Explore key judgements that have shaped Indian constitutional and legal history. Each summary provides a concise yet insightful understanding of the case and its implications.</p>
+  </section>
 
-    <div class="case-card">
-      <h3>Kesavananda Bharati v. State of Kerala (1973)</h3>
-      <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
-      <a href="kesavananda-bharati.html" class="btn">View Summary</a>
-    </div>
+  <section class="featured">
+    <div class="case-list">
+      <li>
+        <h3>Kesavananda Bharati v. State of Kerala (1973)</h3>
+        <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
+        <a href="kesavananda-bharati.html" class="btn">View Summary</a>
+      </li>
 
-  </div>
+      <li>
+        <h3>Maneka Gandhi v. Union of India (1978)</h3>
+        <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
+        <a href="#" class="btn">Coming Soon</a>
+      </li>
 
-  <footer>
-    © 2025 Precis | Designed by Shashank Chawathe
-  </footer>
-
-</body>
-</html>
+      <li>
