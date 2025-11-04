@@ -1,8 +1,8 @@
 /* Root Colors */
 :root {
   --navy-blue: #002147;
-  --gold-accent: #d4af37;
-  --gold-accent-hover: #b08a2c;
+  --accent-color: #c45816; /* Burnt Orange */
+  --accent-color-hover: #a04511;
 }
 
 /* General Settings */
@@ -24,8 +24,8 @@ header {
   background-color: var(--navy-blue);
   color: white;
   padding: 1rem 2rem;
-  border-top: 4px solid var(--gold-accent);
-  border-bottom: 4px solid var(--gold-accent);
+  border-top: 4px solid var(--accent-color);
+  border-bottom: 4px solid var(--accent-color);
 }
 
 .navbar {
@@ -54,7 +54,7 @@ header {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--gold-accent);
+  color: var(--accent-color);
 }
 
 /* Hero Section */
@@ -88,7 +88,7 @@ header {
   color: var(--navy-blue);
   margin-bottom: 1.5rem;
   font-size: 2rem;
-  border-left: 6px solid var(--gold-accent);
+  border-left: 6px solid var(--accent-color);
   padding-left: 10px;
 }
 
@@ -110,7 +110,7 @@ header {
   color: var(--navy-blue);
   margin-bottom: 2rem;
   font-size: 2rem;
-  border-left: 6px solid var(--gold-accent);
+  border-left: 6px solid var(--accent-color);
   padding-left: 10px;
 }
 
@@ -145,7 +145,7 @@ header {
 a.btn, button {
   display: inline-block;
   padding: 10px 16px;
-  background-color: var(--gold-accent);
+  background-color: var(--accent-color);
   color: var(--navy-blue);
   border-radius: 8px;
   text-decoration: none;
@@ -156,7 +156,7 @@ a.btn, button {
 }
 
 a.btn:hover, button:hover {
-  background-color: var(--gold-accent-hover);
+  background-color: var(--accent-color-hover);
   color: white;
 }
 
@@ -167,7 +167,7 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  border-top: 4px solid var(--gold-accent);
+  border-top: 4px solid var(--accent-color);
 }
 
 /* About Page Specific Styles */
@@ -197,7 +197,7 @@ footer {
   color: var(--navy-blue);
   margin-bottom: 20px;
   font-size: 28px;
-  border-left: 6px solid var(--gold-accent);
+  border-left: 6px solid var(--accent-color);
   padding-left: 12px;
 }
 
@@ -208,7 +208,7 @@ footer {
 }
 
 .contact-content a {
-  color: var(--gold-accent);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
