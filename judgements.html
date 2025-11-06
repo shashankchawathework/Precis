@@ -9,8 +9,8 @@
 
 <body>
   <!-- Header Section -->
-  <header>
-    <div class="navbar">
+  <header class="sticky-header">
+    <nav class="navbar">
       <div class="logo-container">
         <img src="logo.png" alt="Precis Logo" class="logo" />
         <span class="logo-text">Précis</span>
@@ -20,16 +20,26 @@
         <li><a href="judgements.html" class="active">Judgements</a></li>
         <li><a href="about.html">About the Creator</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
 
-  <!-- Judgements Section -->
-  <section class="importance">
-    <h2>Landmark Judgements</h2>
-    <p>Explore key judgements that have shaped Indian constitutional and legal history. Each summary provides a concise yet insightful understanding of the case and its implications.</p>
+  <!-- Hero Section -->
+  <section class="hero small-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Landmark Judgements</h1>
+      <p class="tagline">Explore key rulings that shaped Indian Constitutional and Legal history.</p>
+    </div>
   </section>
 
-  <section class="featured">
+  <!-- Judgements Section -->
+  <section class="importance fade-in">
+    <h2>Explore the Cases</h2>
+    <p>Each summary provides a concise yet insightful understanding of landmark cases and their continuing relevance in Indian law.</p>
+  </section>
+
+  <!-- Case Cards -->
+  <section class="featured fade-in">
     <ul class="case-list">
       <li>
         <div class="case-card">
@@ -49,8 +59,8 @@
 
       <li>
         <div class="case-card">
-          <h3><a href="vishaka.html">Vishaka & Ors. v. State of Rajasthan & Ors. (1997)</a></h3>
-          <p>Established workplace sexual harassment guidelines for women's protection.</p>
+          <h3><a href="vishaka.html">Vishaka & Ors. v. State of Rajasthan (1997)</a></h3>
+          <p>Laid down guidelines against sexual harassment at the workplace.</p>
           <a href="vishaka.html" class="btn">View Summary</a>
         </div>
       </li>
@@ -62,15 +72,11 @@
           <a href="navtej-singh.html" class="btn">View Summary</a>
         </div>
       </li>
-
-      <li>
-        <div class="case-card">
-          <h3><a href="bachan-singh.html">Bachan Singh v. State of Punjab (1980)</a></h3>
-          <p>Upheld the constitutionality of the death penalty and introduced the rarest of rare doctrine.</p>
-          <a href="bachan-singh.html" class="btn">View Summary</a>
-        </div>
-      </li>
     </ul>
   </section>
+
+  <footer>
+    <p>© 2025 Précis | Created by Shashank Chawathe</p>
+  </footer>
 </body>
 </html>
