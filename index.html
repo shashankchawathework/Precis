@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Précis | Legal Judgement Summaries</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <header>
     <nav class="navbar">
       <div class="logo-container">
-        <img src="logo.png" alt="Précis Logo" class="logo">
+        <img src="logo.png" alt="Précis Logo" class="logo" />
         <span class="logo-text">Précis</span>
       </div>
-      <ul class="nav-links">
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="judgements.html">Judgements</a></li>
-        <li><a href="about.html">About the Creator</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
@@ -25,64 +26,31 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Précis</h1>
-      <p class="tagline">A one-stop destination for Legal Professionals and Students to find summaries of Judgements.</p>
+      <h1>Welcome to <span>Précis</span></h1>
+      <p>Your concise destination for landmark Indian legal judgements.</p>
+      <a href="judgements.html" class="btn primary-btn">Explore Judgements →</a>
     </div>
   </section>
 
-  <!-- Why Case Summaries Matter -->
-  <section class="importance">
-    <h2>Why Referring to Judgements Matters</h2>
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Précis</h2>
     <p>
-      Judicial precedents form the backbone of legal understanding. They interpret statutes, define rights, and shape the principles
-      that govern society. Reading judgments isn’t limited to lawyers, it builds awareness of rights, duties, and justice in action.
-    </p>
-    <p>
-      For students, professionals, and citizens alike, understanding landmark judgments helps develop critical thinking and a
-      deeper respect for the rule of law. At <strong>Précis</strong>, we make these insights accessible, concise, and comprehensible.
+      Précis is a platform curated by <strong>Shashank Chawathe</strong> to help
+      law students and legal professionals quickly access simplified summaries of
+      landmark Supreme Court judgements shaping the Indian Constitution and
+      jurisprudence.
     </p>
   </section>
 
-  <!-- Featured Judgements -->
-  <section class="featured">
-    <h2>Featured Judgements</h2>
-    <ul class="case-list">
-      <li>
-        <div class="case-card">
-          <h3><a href="kesavananda-bharati.html">Kesavananda Bharati v. State of Kerala (1973)</a></h3>
-          <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
-          <a href="kesavananda-bharati.html" class="btn">View Case</a>
-        </div>
-      </li>
-      <li>
-        <div class="case-card">
-          <h3><a href="maneka-gandhi.html">Maneka Gandhi v. Union of India (1978)</a></h3>
-          <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
-          <a href="maneka-gandhi.html" class="btn">View Case</a>
-        </div>
-      </li>
-      <li>
-        <div class="case-card">
-          <h3><a href="vishaka.html">Vishaka & Ors. v. State of Rajasthan & Ors. (1997)</a></h3>
-          <p>Established workplace sexual harassment guidelines for women's protection.</p>
-          <a href="vishaka.html" class="btn">View Case</a>
-        </div>
-      </li>
-      <li>
-        <div class="case-card">
-          <h3><a href="navtej-singh.html">Navtej Singh Johar v. Union of India (2018)</a></h3>
-          <p>Decriminalized Section 377 IPC, affirming LGBTQ+ constitutional rights.</p>
-          <a href="navtej-singh.html" class="btn">View Case</a>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Précis | Created by Shashank Chawathe</p>
+    <p>© 2025 Précis | Curated by Shashank Chawathe</p>
   </footer>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const links = document.getElementById("nav-links");
+    toggle.addEventListener("click", () => links.classList.toggle("active"));
+  </script>
 </body>
 </html>
-
-
