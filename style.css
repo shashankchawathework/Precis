@@ -235,3 +235,67 @@ footer {
   color: white;
   font-family: "Times New Roman", serif;
 }
+
+/* Sticky Header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Hero Enhancements */
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1555374018-13a8994ab246?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.hero.small-hero {
+  padding: 5rem 2rem;
+  background-position: center top;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.hero .btn {
+  margin-top: 1.5rem;
+}
+
+/* Fade-In Animation */
+.fade-in {
+  animation: fadeIn 1.2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card Hover Glow */
+.case-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
