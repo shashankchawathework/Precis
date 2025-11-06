@@ -3,62 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landmark Judgements | Précis</title>
+  <title>Judgements | Précis</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Header Section -->
   <header>
-    <nav class="navbar">
+    <div class="navbar">
       <div class="logo-container">
-        <img src="logo.png" alt="Précis Logo" class="logo" />
+        <img src="logo.png" alt="Precis Logo" class="logo" />
         <span class="logo-text">Précis</span>
       </div>
-      <button class="menu-toggle" id="menu-toggle">☰</button>
-      <ul class="nav-links" id="nav-links">
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="judgements.html" class="active">Judgements</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">About the Creator</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
 
-  <main class="judgement-container">
-    <h1>Landmark Judgements</h1>
-    <p class="subtitle">Explore key cases that transformed Indian constitutional law.</p>
+  <!-- Judgements Section -->
+  <section class="importance">
+    <h2>Landmark Judgements</h2>
+    <p>Explore key judgements that have shaped Indian constitutional and legal history. Each summary provides a concise yet insightful understanding of the case and its implications.</p>
+  </section>
 
-    <div class="case-grid">
-      <div class="case-card">
-        <h2>Kesavananda Bharati v. State of Kerala (1973)</h2>
-        <p>Established the Basic Structure Doctrine — limiting Parliament’s power to amend the Constitution.</p>
-        <a href="kesavananda.html" class="btn">Read Summary</a>
-      </div>
+  <section class="featured">
+    <ul class="case-list">
+      <li>
+        <div class="case-card">
+          <h3><a href="kesavananda-bharati.html">Kesavananda Bharati v. State of Kerala (1973)</a></h3>
+          <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
+          <a href="kesavananda-bharati.html" class="btn">View Summary</a>
+        </div>
+      </li>
 
-      <div class="case-card">
-        <h2>Maneka Gandhi v. Union of India (1978)</h2>
-        <p>Expanded Article 21 — Right to Life and Personal Liberty, ensuring fairness and justice in state actions.</p>
-        <a href="maneka-gandhi.html" class="btn">Read Summary</a>
-      </div>
+      <li>
+        <div class="case-card">
+          <h3><a href="maneka-gandhi.html">Maneka Gandhi v. Union of India (1978)</a></h3>
+          <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
+          <a href="maneka-gandhi.html" class="btn">View Summary</a>
+        </div>
+      </li>
 
-      <div class="case-card">
-        <h2>Indira Gandhi v. Raj Narain (1975)</h2>
-        <p>Reinforced judicial review and struck down constitutional amendments curbing judicial independence.</p>
-        <a href="indira-rajnarain.html" class="btn">Read Summary</a>
-      </div>
-    </div>
+      <li>
+        <div class="case-card">
+          <h3><a href="vishaka.html">Vishaka & Ors. v. State of Rajasthan & Ors. (1997)</a></h3>
+          <p>Established workplace sexual harassment guidelines for women's protection.</p>
+          <a href="vishaka.html" class="btn">View Summary</a>
+        </div>
+      </li>
 
-    <div class="back-btn">
-      <a href="index.html" class="btn secondary-btn">← Back to Home</a>
-    </div>
-  </main>
+      <li>
+        <div class="case-card">
+          <h3><a href="navtej-singh.html">Navtej Singh Johar v. Union of India (2018)</a></h3>
+          <p>Decriminalized Section 377 IPC, affirming LGBTQ+ constitutional rights.</p>
+          <a href="navtej-singh.html" class="btn">View Summary</a>
+        </div>
+      </li>
 
-  <footer>
-    <p>© 2025 Précis | Curated by Shashank Chawathe</p>
-  </footer>
-
-  <script>
-    const toggle = document.getElementById("menu-toggle");
-    const links = document.getElementById("nav-links");
-    toggle.addEventListener("click", () => links.classList.toggle("active"));
-  </script>
+      <li>
+        <div class="case-card">
+          <h3><a href="bachan-singh.html">Bachan Singh v. State of Punjab (1980)</a></h3>
+          <p>Upheld the constitutionality of the death penalty and introduced the rarest of rare doctrine.</p>
+          <a href="bachan-singh.html" class="btn">View Summary</a>
+        </div>
+      </li>
+    </ul>
+  </section>
 </body>
 </html>
