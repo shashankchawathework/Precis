@@ -1,135 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Précis | Landmark Judgements</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: url('https://images.unsplash.com/photo-1528744598421-b7b93e12dfb4?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      color: #222;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      background: rgba(0, 0, 0, 0.6);
-      color: white;
-      text-align: center;
-      padding: 4rem 1rem;
-      backdrop-filter: blur(4px);
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      animation: fadeInDown 1s ease-out;
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      color: #dcdcdc;
-      font-style: italic;
-      animation: fadeIn 1.5s ease-out;
-    }
-
-    main {
-      background: rgba(255, 255, 255, 0.95);
-      margin: 2rem auto;
-      padding: 2rem;
-      max-width: 900px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
-
-    section {
-      margin-bottom: 2rem;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    h2 {
-      color: #003366;
-      border-left: 5px solid #0074D9;
-      padding-left: 10px;
-    }
-
-    a.btn {
-      display: inline-block;
-      margin-top: 1rem;
-      background: #0074D9;
-      color: white;
-      padding: 0.8rem 1.6rem;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-
-    a.btn:hover {
-      background: #005fa3;
-    }
-
-    footer {
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Précis | Legal Judgement Summaries</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <!-- Navigation Bar -->
   <header>
-    <h1>⚖️ Précis</h1>
-    <p>Curated Summaries of Landmark Judgements</p>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="logo.png" alt="Précis Logo" class="logo">
+        <span class="logo-text">Précis</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="judgements.html">Judgements</a></li>
+        <li><a href="about.html">About the Creator</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>About the Project</h2>
-      <p>
-        <strong>Précis</strong> is a collection of concise and well-curated summaries of landmark judgments that have shaped Indian constitutional and legal thought. Each case has been simplified without compromising accuracy or depth, designed for law students and enthusiasts.
-      </p>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Précis</h1>
+      <p class="tagline">A one-stop destination for Legal Professionals and Students to find summaries of Judgements.</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>Explore Judgements</h2>
-      <p>Read detailed summaries of the most significant constitutional cases in India.</p>
-      <a href="judgements.html" class="btn">View Judgements →</a>
-    </section>
-  </main>
+  <!-- Why Case Summaries Matter -->
+  <section class="importance">
+    <h2>Why Referring to Judgements Matters</h2>
+    <p>
+      Judicial precedents form the backbone of legal understanding. They interpret statutes, define rights, and shape the principles
+      that govern society. Reading judgments isn’t limited to lawyers, it builds awareness of rights, duties, and justice in action.
+    </p>
+    <p>
+      For students, professionals, and citizens alike, understanding landmark judgments helps develop critical thinking and a
+      deeper respect for the rule of law. At <strong>Précis</strong>, we make these insights accessible, concise, and comprehensible.
+    </p>
+  </section>
 
+  <!-- Featured Judgements -->
+  <section class="featured">
+    <h2>Featured Judgements</h2>
+    <ul class="case-list">
+      <li>
+        <div class="case-card">
+          <h3><a href="kesavananda-bharati.html">Kesavananda Bharati v. State of Kerala (1973)</a></h3>
+          <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
+          <a href="kesavananda-bharati.html" class="btn">View Case</a>
+        </div>
+      </li>
+      <li>
+        <div class="case-card">
+          <h3><a href="maneka-gandhi.html">Maneka Gandhi v. Union of India (1978)</a></h3>
+          <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
+          <a href="maneka-gandhi.html" class="btn">View Case</a>
+        </div>
+      </li>
+      <li>
+        <div class="case-card">
+          <h3><a href="vishaka.html">Vishaka & Ors. v. State of Rajasthan & Ors. (1997)</a></h3>
+          <p>Established workplace sexual harassment guidelines for women's protection.</p>
+          <a href="vishaka.html" class="btn">View Case</a>
+        </div>
+      </li>
+      <li>
+        <div class="case-card">
+          <h3><a href="navtej-singh.html">Navtej Singh Johar v. Union of India (2018)</a></h3>
+          <p>Decriminalized Section 377 IPC, affirming LGBTQ+ constitutional rights.</p>
+          <a href="navtej-singh.html" class="btn">View Case</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Précis | Curated by Shashank Chawathe</p>
+    <p>© 2025 Précis | Created by Shashank Chawathe</p>
   </footer>
-
-  <script>
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.2 });
-
-    sections.forEach(section => observer.observe(section));
-  </script>
 </body>
 </html>
