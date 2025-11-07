@@ -5,71 +5,172 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Précis | Legal Judgement Summaries</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #001f3f, #0074D9);
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      vertical-align: middle;
+    }
+
+    .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      color: #dbeafe;
+    }
+
+    .hero {
+      background: url('courtroom.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 8rem 2rem;
+      background-attachment: fixed;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin: 0;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    .hero-content .tagline {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 1rem auto;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #001f3f;
+      border-left: 5px solid #0074D9;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .case-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .case-list li {
+      margin-bottom: 0.8rem;
+    }
+
+    .case-list a {
+      color: #0074D9;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .case-list a:hover {
+      color: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #001f3f;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
+
 <body>
   <!-- Navigation Bar -->
-  <header class="sticky-header">
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="logo.png" alt="Précis Logo" class="logo">
-        <span class="logo-text">Précis</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="judgements.html">Judgements</a></li>
-        <li><a href="about.html">About the Creator</a></li>
-      </ul>
-    </nav>
+  <header>
+    <div class="logo"><img src="logo.png" alt="Précis Logo"></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="judgements.html">Judgements</a></li>
+      <li><a href="about.html">About the Creator</a></li>
+    </ul>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Précis</h1>
-      <p class="tagline">A one-stop destination for Legal Professionals and Students to explore concise summaries of landmark Judgements.</p>
-      <a href="judgements.html" class="btn">Explore Judgements</a>
+      <p class="tagline">A one-stop destination for Legal Professionals and Students to find concise and reliable summaries of Landmark Judgements.</p>
     </div>
   </section>
 
-  <!-- Why Case Summaries Matter -->
-  <section class="importance fade-in">
+  <!-- Importance Section -->
+  <section>
     <h2>Why Referring to Judgements Matters</h2>
     <p>
-      Judicial precedents form the backbone of legal understanding. They interpret statutes, define rights, and shape the principles that govern society.
-      Reading judgments isn’t limited to lawyers—it builds awareness of rights, duties, and justice in action.
+      Judicial precedents form the backbone of legal understanding. They interpret statutes, define rights, and shape the principles
+      that govern society. Reading judgments builds awareness of rights, duties, and justice in action.
     </p>
     <p>
-      For students, professionals, and citizens alike, understanding landmark judgments helps develop critical thinking and a deeper respect for the rule of law.
-      At <strong>Précis</strong>, we make these insights accessible, concise, and comprehensible.
+      For students, professionals, and citizens alike, understanding landmark judgments helps develop critical thinking and a
+      deeper respect for the rule of law. At <strong>Précis</strong>, we make these insights accessible, concise, and comprehensible.
     </p>
   </section>
 
   <!-- Featured Judgements -->
-  <section class="featured fade-in">
+  <section>
     <h2>Featured Judgements</h2>
     <ul class="case-list">
-      <li>
-        <div class="case-card">
-          <h3><a href="kesavananda-bharati.html">Kesavananda Bharati v. State of Kerala (1973)</a></h3>
-          <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
-          <a href="kesavananda-bharati.html" class="btn">View Case</a>
-        </div>
-      </li>
-      <li>
-        <div class="case-card">
-          <h3><a href="maneka-gandhi.html">Maneka Gandhi v. Union of India (1978)</a></h3>
-          <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
-          <a href="maneka-gandhi.html" class="btn">View Case</a>
-        </div>
-      </li>
-      <li>
-        <div class="case-card">
-          <h3><a href="vishaka.html">Vishaka & Ors. v. State of Rajasthan (1997)</a></h3>
-          <p>Laid down guidelines against sexual harassment at the workplace.</p>
-          <a href="vishaka.html" class="btn">View Case</a>
-        </div>
-      </li>
+      <li><a href="kesavananda-bharati.html">Kesavananda Bharati v. State of Kerala (1973)</a></li>
+      <li><a href="maneka-gandhi.html">Maneka Gandhi v. Union of India (1978)</a></li>
+      <li><a href="vishaka.html">Vishaka v. State of Rajasthan (1997)</a></li>
+      <li><a href="navtej-singh-johar.html">Navtej Singh Johar v. Union of India (2018)</a></li>
     </ul>
   </section>
 
