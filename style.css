@@ -100,11 +100,13 @@ body {
 .importance h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .importance p {
   margin-bottom: 1rem;
   line-height: 1.6;
+  text-align: center;
 }
 
 /* Featured Judgements */
@@ -128,48 +130,51 @@ body {
 }
 
 .case-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--white);
   padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-  flex: 1 1 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1 1 280px;
   max-width: 300px;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .case-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .case-card h3 {
   margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: var(--navy-blue);
 }
 
 .case-card p {
-  margin-bottom: 1rem;
   font-size: 0.95rem;
   line-height: 1.4;
+  margin-bottom: 1rem;
 }
 
-.case-card a {
-  text-decoration: none;
-  color: var(--accent-color);
-}
-
-.btn {
+.case-card .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
   background-color: var(--accent-color);
   color: var(--white);
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.btn:hover {
+.case-card .btn:hover {
   background-color: var(--accent-color-hover);
+  transform: scale(1.05);
 }
 
 /* Footer */
