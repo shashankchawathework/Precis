@@ -1,135 +1,186 @@
-/* ====== GENERAL ====== */
+/* === Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #333;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* ====== HEADER ====== */
-header {
-    background-color: #ff914d;
-    color: white;
+/* === Navbar === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #111;
+  color: #fff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #f1c40f;
+}
+
+/* === Mobile Navbar === */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    width: 100%;
     text-align: center;
-    padding: 30px 10px;
-    position: relative;
+    padding: 1rem 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
 }
 
-header .logo {
-    width: 90px;
-    height: auto;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    border-radius: 12px;
+/* === Hero Section === */
+.hero {
+  background: linear-gradient(to right, #002f4b, #005f73);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1rem;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
 }
 
-header p {
-    margin-top: 5px;
-    font-style: italic;
+.hero-content span {
+  color: #f1c40f;
 }
 
-/* ====== NAVBAR ====== */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 15px;
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 12px;
+.primary-btn {
+  background: #f1c40f;
+  color: #111;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.secondary-btn {
+  background: #333;
+  color: #fff;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.btn:hover {
+  opacity: 0.85;
 }
 
-/* ====== SECTIONS ====== */
-section {
-    padding: 40px 20px;
-    text-align: center;
+/* === About Section === */
+.about {
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
 }
 
-h2 {
-    color: #ff914d;
-    margin-bottom: 20px;
+.about h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
-/* ====== CASE CARDS ====== */
+/* === Judgement Cards === */
+.judgement-container {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
 .case-card {
-    background-color: #fff7f0;
-    border: 1px solid #ff914d;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 15px auto;
-    max-width: 700px;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
 
-.case-card h3 {
-    color: #333;
-    margin-top: 0;
+.case-card:hover {
+  transform: translateY(-5px);
 }
 
-.case-card p {
-    margin: 10px 0 15px 0;
+.case-card h2 {
+  margin-bottom: 0.5rem;
+  color: #002f4b;
 }
 
-.case-card a {
-    background-color: #ff914d;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
+.subtitle {
+  color: #555;
+  font-size: 1rem;
 }
 
-.case-card a:hover {
-    background-color: #ff7300;
+.back-btn {
+  margin-top: 2rem;
 }
 
-/* ====== CASE SUMMARY PAGE ====== */
-.case-summary {
-    max-width: 800px;
-    margin: 40px auto;
-    background-color: #fffaf4;
-    border: 1px solid #ff914d;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-    text-align: left;
-}
-
-.case-summary h2 {
-    color: #ff7300;
-    border-bottom: 2px solid #ff914d;
-    padding-bottom: 8px;
-}
-
-.case-summary h3 {
-    color: #ff7300;
-    margin-top: 20px;
-}
-
-/* ====== FOOTER ====== */
+/* === Footer === */
 footer {
-    background-color: #ff914d;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 0.9em;
-    margin-top: 30px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
