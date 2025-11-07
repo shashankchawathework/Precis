@@ -5,6 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Judgements | Précis</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Search Bar Styling */
+    .search-container {
+      text-align: center;
+      margin: 2rem auto 1rem;
+    }
+
+    .search-container input {
+      width: 60%;
+      max-width: 500px;
+      padding: 0.8rem;
+      font-size: 1.1rem;
+      border: 2px solid #002147;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    .search-container input:focus {
+      border-color: #ffcb05;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .no-results {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-top: 1.5rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -29,9 +59,13 @@
     <p>Explore key judgements that have shaped Indian constitutional and legal history. Each summary provides a concise yet insightful understanding of the case and its implications.</p>
   </section>
 
-  <section class="featured">
-    <div class="case-list">
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search by case name, year, or keyword...">
+  </div>
 
+  <section class="featured">
+    <ul class="case-list" id="caseList">
       <li>
         <h3>Kesavananda Bharati v. State of Kerala (1973)</h3>
         <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
@@ -58,16 +92,42 @@
 
       <li>
         <h3>Bachan Singh v. State of Punjab (1980)</h3>
-        <p>Upheld the constitutional validity of the death penalty while restricting its application to the “rarest of rare” cases.</p>
+        <p>Upheld the constitutionality of the death penalty while introducing the “rarest of rare” doctrine.</p>
         <a href="bachan-singh.html" class="btn">View Summary</a>
       </li>
+    </ul>
 
-    </div>
+    <p id="noResults" class="no-results" style="display: none;">No matching judgements found.</p>
   </section>
 
   <!-- Footer -->
   <footer>
     © 2025 Précis | Created by Shashank Chawathe
   </footer>
+
+  <script>
+    // Search/Filter Functionality
+    const searchInput = document.getElementById("searchInput");
+    const caseList = document.getElementById("caseList");
+    const cases = caseList.getElementsByTagName("li");
+    const noResults = document.getElementById("noResults");
+
+    searchInput.addEventListener("keyup", function() {
+      const filter = searchInput.value.toLowerCase();
+      let visibleCount = 0;
+
+      for (let i = 0; i < cases.length; i++) {
+        const text = cases[i].innerText.toLowerCase();
+        if (text.includes(filter)) {
+          cases[i].style.display = "";
+          visibleCount++;
+        } else {
+          cases[i].style.display = "none";
+        }
+      }
+
+      noResults.style.display = visibleCount === 0 ? "block" : "none";
+    });
+  </script>
 </body>
 </html>
