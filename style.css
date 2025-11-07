@@ -1,193 +1,135 @@
-:root {
-  --navy-blue: #002147;
-  --accent-color: #c45816;
-  --accent-color-hover: #a04511;
-  --white: #ffffff;
-  --light-gray: #f9f9f9;
-  --text-color: #333333;
-  --footer-bg: #002147;
-  --footer-text: #ffffff;
-  --card-shadow: rgba(0, 0, 0, 0.08);
-}
-
-/* Global */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Times New Roman', serif;
-}
-
+/* ====== GENERAL ====== */
 body {
-  background-color: var(--light-gray);
-  color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--navy-blue);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+/* ====== HEADER ====== */
+header {
+    background-color: #ff914d;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    position: relative;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--white);
+header .logo {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 12px;
 }
 
-.logo {
-  width: 50px;
-  margin-right: 0.5rem;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: bold;
+header p {
+    margin-top: 5px;
+    font-style: italic;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
+/* ====== NAVBAR ====== */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
 }
 
-.nav-links li {
-  margin-left: 1.5rem;
+nav ul li {
+    display: inline;
+    margin: 0 12px;
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: var(--white);
-  font-size: 1rem;
-  transition: color 0.3s;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.nav-links li a:hover,
-.nav-links li a.active {
-  color: var(--accent-color);
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 5rem 1rem;
-  background-color: var(--white);
+/* ====== SECTIONS ====== */
+section {
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+h2 {
+    color: #ff914d;
+    margin-bottom: 20px;
 }
 
-.hero .tagline {
-  font-size: 1.25rem;
-  color: var(--text-color);
-}
-
-/* Importance */
-.importance {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-.importance h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.importance p {
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-/* Featured Judgements */
-.featured {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 1rem;
-}
-
-.featured h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-/* Cards */
-.case-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
+/* ====== CASE CARDS ====== */
 .case-card {
-  background-color: var(--white);
-  padding: 1.5rem;
-  border-radius: 12px;
-  border-left: 5px solid var(--accent-color);
-  box-shadow: 0 6px 15px var(--card-shadow);
-  flex: 1 1 280px;
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff7f0;
+    border: 1px solid #ff914d;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 700px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
 }
 
-.case-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px var(--card-shadow);
+.case-card h3 {
+    color: #333;
+    margin-top: 0;
 }
 
-/* Case Title Box */
-.case-title {
-  background-color: var(--accent-color);
-  color: var(--white);
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  border-radius: 6px;
-  display: inline-block;
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
-}
-
-/* Card Text */
 .case-card p {
-  margin-bottom: 1rem;
-  line-height: 1.5;
+    margin: 10px 0 15px 0;
 }
 
-/* Button */
-.btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: var(--navy-blue);
-  color: var(--white);
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
+.case-card a {
+    background-color: #ff914d;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.btn:hover {
-  background-color: var(--accent-color);
-  transform: scale(1.05);
+.case-card a:hover {
+    background-color: #ff7300;
 }
 
-/* Footer */
+/* ====== CASE SUMMARY PAGE ====== */
+.case-summary {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fffaf4;
+    border: 1px solid #ff914d;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.case-summary h2 {
+    color: #ff7300;
+    border-bottom: 2px solid #ff914d;
+    padding-bottom: 8px;
+}
+
+.case-summary h3 {
+    color: #ff7300;
+    margin-top: 20px;
+}
+
+/* ====== FOOTER ====== */
 footer {
-  background-color: var(--footer-bg);
-  color: var(--footer-text);
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+    background-color: #ff914d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    margin-top: 30px;
 }
