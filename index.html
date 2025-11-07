@@ -5,134 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Précis | Legal Judgement Summaries</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background-color: #f8f9fa;
-      color: #222;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      background: linear-gradient(135deg, #001f3f, #0074D9);
-      color: white;
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 50px;
-      vertical-align: middle;
-    }
-
-    .nav-links {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover,
-    .nav-links .active {
-      color: #dbeafe;
-    }
-
-    .hero {
-      background: url('courtroom.jpg') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 8rem 2rem;
-      background-attachment: fixed;
-    }
-
-    .hero-content h1 {
-      font-size: 3rem;
-      margin: 0;
-      animation: fadeInDown 1.2s ease;
-    }
-
-    .hero-content .tagline {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 1rem auto;
-      animation: fadeInUp 1.5s ease;
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    section {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 2rem;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
-    }
-
-    section:hover {
-      transform: translateY(-5px);
-    }
-
-    h2 {
-      color: #001f3f;
-      border-left: 5px solid #0074D9;
-      padding-left: 10px;
-      margin-bottom: 1rem;
-    }
-
-    .case-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    .case-list li {
-      margin-bottom: 0.8rem;
-    }
-
-    .case-list a {
-      color: #0074D9;
-      font-weight: 600;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .case-list a:hover {
-      color: #005fa3;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #001f3f;
-      color: white;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-    }
-  </style>
 </head>
 
 <body>
-  <!-- Navigation Bar -->
+  <!-- =======================
+       NAVBAR
+  ======================= -->
   <header>
     <div class="logo"><img src="logo.png" alt="Précis Logo"></div>
     <ul class="nav-links">
@@ -142,28 +20,35 @@
     </ul>
   </header>
 
-  <!-- Hero Section -->
+  <!-- =======================
+       HERO SECTION
+  ======================= -->
   <section class="hero">
     <div class="hero-content">
       <h1>Précis</h1>
-      <p class="tagline">A one-stop destination for Legal Professionals and Students to find concise and reliable summaries of Landmark Judgements.</p>
+      <p class="tagline">Your destination for concise and insightful summaries of landmark Indian judgements.</p>
+      <a href="judgements.html" class="btn">Explore Judgements</a>
     </div>
   </section>
 
-  <!-- Importance Section -->
+  <!-- =======================
+       IMPORTANCE SECTION
+  ======================= -->
   <section>
     <h2>Why Referring to Judgements Matters</h2>
     <p>
-      Judicial precedents form the backbone of legal understanding. They interpret statutes, define rights, and shape the principles
-      that govern society. Reading judgments builds awareness of rights, duties, and justice in action.
+      Judicial precedents form the backbone of legal understanding. They interpret statutes, define rights, and shape the
+      principles that govern our society. Reading judgements builds awareness of rights, duties, and justice in action.
     </p>
     <p>
-      For students, professionals, and citizens alike, understanding landmark judgments helps develop critical thinking and a
-      deeper respect for the rule of law. At <strong>Précis</strong>, we make these insights accessible, concise, and comprehensible.
+      For students, professionals, and citizens alike, understanding landmark cases helps develop critical thinking and a
+      deeper respect for the rule of law. At <strong>Précis</strong>, we make these insights accessible, concise, and reliable.
     </p>
   </section>
 
-  <!-- Featured Judgements -->
+  <!-- =======================
+       FEATURED JUDGEMENTS
+  ======================= -->
   <section>
     <h2>Featured Judgements</h2>
     <ul class="case-list">
@@ -174,9 +59,11 @@
     </ul>
   </section>
 
-  <!-- Footer -->
+  <!-- =======================
+       FOOTER
+  ======================= -->
   <footer>
-    <p>© 2025 Précis | Created by Shashank Chawathe</p>
+    <p>© 2025 Précis | Curated by Shashank Chawathe</p>
   </footer>
 </body>
 </html>
