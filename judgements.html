@@ -4,129 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Judgements | Précis</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: url('https://images.unsplash.com/photo-1601987077493-6e3a22b9e6d3?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      background-attachment: fixed;
-      margin: 0;
-      color: #222;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      background: rgba(0,0,0,0.7);
-      color: white;
-      text-align: center;
-      padding: 3rem 1rem;
-      backdrop-filter: blur(5px);
-    }
-
-    main {
-      background: rgba(255,255,255,0.95);
-      max-width: 900px;
-      margin: 2rem auto;
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    .case-card {
-      background: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease;
-    }
-
-    .case-card.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .case-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    }
-
-    .case-card h3 {
-      color: #003366;
-      margin: 0 0 0.5rem;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #0074D9;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 0.5rem;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background: #005fa3;
-    }
-
-    footer {
-      background: rgba(0, 0, 0, 0.85);
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
+  <!-- Header Section -->
   <header>
-    <h1>📚 Landmark Judgements</h1>
-    <p>Explore the foundations of Indian Constitutional Law</p>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="logo.png" alt="Precis Logo" class="logo" />
+        <span class="logo-text">Précis</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="judgements.html" class="active">Judgements</a></li>
+        <li><a href="about.html">About the Creator</a></li>
+      </ul>
+    </div>
   </header>
 
-  <main>
-    <div class="case-card">
-      <h3>Keshavananda Bharati v. State of Kerala (1973)</h3>
-      <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
-      <a href="Kesavananda.html" class="btn">Read Summary →</a>
-    </div>
+  <!-- Judgements Section -->
+  <section class="importance">
+    <h2>Landmark Judgements</h2>
+    <p>Explore key judgements that have shaped Indian constitutional and legal history. Each summary provides a concise yet insightful understanding of the case and its implications.</p>
+  </section>
 
-    <div class="case-card">
-      <h3>Maneka Gandhi v. Union of India (1978)</h3>
-      <p>Expanded the interpretation of Article 21, ensuring fairness and reasonableness in procedure.</p>
-      <a href="ManekaGandhi.html" class="btn">Read Summary →</a>
-    </div>
+  <section class="featured">
+    <ul class="case-list">
+      <li>
+        <div class="case-card">
+          <h3><a href="kesavananda-bharati.html">Kesavananda Bharati v. State of Kerala (1973)</a></h3>
+          <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
+          <a href="kesavananda-bharati.html" class="btn">View Summary</a>
+        </div>
+      </li>
 
-    <div class="case-card">
-      <h3>Indra Sawhney v. Union of India (1992)</h3>
-      <p>Upheld reservations for OBCs and established the 50% cap rule for affirmative action.</p>
-      <a href="IndraSawhney.html" class="btn">Read Summary →</a>
-    </div>
-  </main>
+      <li>
+        <div class="case-card">
+          <h3><a href="maneka-gandhi.html">Maneka Gandhi v. Union of India (1978)</a></h3>
+          <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
+          <a href="maneka-gandhi.html" class="btn">View Summary</a>
+        </div>
+      </li>
 
-  <footer>
-    <p>© 2025 Précis | Curated by Shashank Chawathe</p>
-  </footer>
+      <li>
+        <div class="case-card">
+          <h3><a href="vishaka.html">Vishaka & Ors. v. State of Rajasthan & Ors. (1997)</a></h3>
+          <p>Established workplace sexual harassment guidelines for women's protection.</p>
+          <a href="vishaka.html" class="btn">View Summary</a>
+        </div>
+      </li>
 
-  <script>
-    const cards = document.querySelectorAll('.case-card');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.2 });
+      <li>
+        <div class="case-card">
+          <h3><a href="navtej-singh.html">Navtej Singh Johar v. Union of India (2018)</a></h3>
+          <p>Decriminalized Section 377 IPC, affirming LGBTQ+ constitutional rights.</p>
+          <a href="navtej-singh.html" class="btn">View Summary</a>
+        </div>
+      </li>
 
-    cards.forEach(card => observer.observe(card));
-  </script>
-
+      <li>
+        <div class="case-card">
+          <h3><a href="bachan-singh.html">Bachan Singh v. State of Punjab (1980)</a></h3>
+          <p>Upheld the constitutionality of the death penalty and introduced the rarest of rare doctrine.</p>
+          <a href="bachan-singh.html" class="btn">View Summary</a>
+        </div>
+      </li>
+    </ul>
+  </section>
 </body>
 </html>
