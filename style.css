@@ -1,10 +1,3 @@
-/* Root Colors */
-:root {
-  --navy-blue: #002147;
-  --accent-color: #c45816; /* Burnt Orange */
-  --accent-color-hover: #a04511;
-}
-
 /* General Settings */
 * {
   margin: 0;
@@ -21,11 +14,9 @@ body {
 
 /* Navbar */
 header {
-  background-color: var(--navy-blue);
+  background-color: #002147;
   color: white;
   padding: 1rem 2rem;
-  border-top: 4px solid var(--accent-color);
-  border-bottom: 4px solid var(--accent-color);
 }
 
 .navbar {
@@ -54,7 +45,7 @@ header {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent-color);
+  color: #ffcb05;
 }
 
 /* Hero Section */
@@ -85,11 +76,9 @@ header {
 }
 
 .importance h2 {
-  color: var(--navy-blue);
+  color: #002147;
   margin-bottom: 1.5rem;
   font-size: 2rem;
-  border-left: 6px solid var(--accent-color);
-  padding-left: 10px;
 }
 
 .importance p {
@@ -107,11 +96,9 @@ header {
 }
 
 .featured h2 {
-  color: var(--navy-blue);
+  color: #002147;
   margin-bottom: 2rem;
   font-size: 2rem;
-  border-left: 6px solid var(--accent-color);
-  padding-left: 10px;
 }
 
 .case-list {
@@ -136,38 +123,32 @@ header {
 }
 
 .case-list a {
-  color: var(--navy-blue);
+  color: #002147;
   font-size: 1.1rem;
   text-decoration: none;
 }
-
-/* Buttons */
-a.btn, button {
+.btn {
   display: inline-block;
   padding: 10px 16px;
-  background-color: var(--accent-color);
-  color: var(--navy-blue);
+  background-color: #007acc;
+  color: white;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border: none;
-  cursor: pointer;
+  transition: 0.3s;
 }
 
-a.btn:hover, button:hover {
-  background-color: var(--accent-color-hover);
-  color: white;
+.btn:hover {
+  background-color: #005fa3;
 }
 
 /* Footer */
 footer {
-  background-color: var(--navy-blue);
+  background-color: #002147;
   color: white;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  border-top: 4px solid var(--accent-color);
 }
 
 /* About Page Specific Styles */
@@ -194,11 +175,9 @@ footer {
 }
 
 .about-content h2, .mission-content h2, .contact-content h2 {
-  color: var(--navy-blue);
+  color: #002147;
   margin-bottom: 20px;
   font-size: 28px;
-  border-left: 6px solid var(--accent-color);
-  padding-left: 12px;
 }
 
 .about-content p, .mission-content p, .contact-content p {
@@ -208,14 +187,13 @@ footer {
 }
 
 .contact-content a {
-  color: var(--accent-color);
+  color: #d4af37;
   text-decoration: none;
 }
 
 .contact-content a:hover {
   text-decoration: underline;
 }
-
 /* Logo Styling */
 .logo-container {
   display: flex;
@@ -224,7 +202,7 @@ footer {
 }
 
 .logo {
-  width: 50px;
+  width: 50px; /* Adjust size as needed */
   height: auto;
   border-radius: 8px;
 }
@@ -235,3 +213,5 @@ footer {
   color: white;
   font-family: "Times New Roman", serif;
 }
+
+
