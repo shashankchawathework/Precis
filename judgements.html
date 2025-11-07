@@ -1,47 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Judgements - Précis</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Judgements | Précis</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1601987077493-6e3a22b9e6d3?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      background-attachment: fixed;
+      margin: 0;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: rgba(0,0,0,0.7);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      backdrop-filter: blur(5px);
+    }
+
+    main {
+      background: rgba(255,255,255,0.95);
+      max-width: 900px;
+      margin: 2rem auto;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .case-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .case-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .case-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    .case-card h3 {
+      color: #003366;
+      margin: 0 0 0.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0074D9;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #005fa3;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="A_logo_for_'Précis,'_designed_for_a_legal_platform.png" alt="Précis Logo" class="logo">
-        <h1>Judgements</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="judgements.html">Judgements</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="kesavananda" class="case-summary">
-            <h2>Kesavananda Bharati v. State of Kerala (1973)</h2>
-            <h3>Summary of the Judgement</h3>
-            <p>The Supreme Court in this case established the Basic Structure Doctrine, holding that while Parliament has wide powers to amend the Constitution, it cannot alter its basic structure or essential features. This ruling preserved the supremacy of the Constitution and ensured that fundamental rights remain protected from unlimited parliamentary power.</p>
-            <h3>Analysis of the Judgement</h3>
-            <p>This case marked a turning point in constitutional law, balancing Parliament's amending powers with constitutional supremacy. The judgment reinforced judicial review and established limits to constitutional amendments to prevent abuse of power.</p>
-            <h3>Relevance in the Legal Field</h3>
-            <p>The Basic Structure Doctrine remains a cornerstone of Indian constitutional law and continues to guide constitutional interpretation and judicial review.</p>
-        </section>
+  <header>
+    <h1>📚 Landmark Judgements</h1>
+    <p>Explore the foundations of Indian Constitutional Law</p>
+  </header>
 
-        <section id="maneka" class="case-summary">
-            <h2>Maneka Gandhi v. Union of India (1978)</h2>
-            <h3>Summary of the Judgement</h3>
-            <p>The Supreme Court expanded the scope of Article 21 of the Constitution, holding that the "right to life and personal liberty" includes living with dignity and fairness. The Court ruled that any law depriving a person of liberty must be "just, fair, and reasonable" and not arbitrary, and must satisfy Articles 14 and 19 as well.</p>
-            <h3>Analysis of the Judgement</h3>
-            <p>The judgment introduced the due process concept into Indian law, linking Articles 14, 19, and 21. It reinforced natural justice principles and established procedural fairness as an essential part of administrative and constitutional law.</p>
-            <h3>Relevance in the Legal Field</h3>
-            <p>This landmark case shaped the interpretation of fundamental rights and continues to influence judicial protection of personal liberty and procedural fairness.</p>
-        </section>
-    </main>
+  <main>
+    <div class="case-card">
+      <h3>Keshavananda Bharati v. State of Kerala (1973)</h3>
+      <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
+      <a href="Kesavananda.html" class="btn">Read Summary →</a>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Précis | All Rights Reserved</p>
-    </footer>
+    <div class="case-card">
+      <h3>Maneka Gandhi v. Union of India (1978)</h3>
+      <p>Expanded the interpretation of Article 21, ensuring fairness and reasonableness in procedure.</p>
+      <a href="ManekaGandhi.html" class="btn">Read Summary →</a>
+    </div>
+
+    <div class="case-card">
+      <h3>Indra Sawhney v. Union of India (1992)</h3>
+      <p>Upheld reservations for OBCs and established the 50% cap rule for affirmative action.</p>
+      <a href="IndraSawhney.html" class="btn">Read Summary →</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Précis | Curated by Shashank Chawathe</p>
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.case-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+  </script>
+
 </body>
 </html>
