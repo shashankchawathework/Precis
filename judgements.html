@@ -1,96 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Judgements | Précis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="logo.png" alt="Precis Logo" class="logo" />
+        <span class="logo-text">Précis</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="judgements.html" class="active">Judgements</a></li>
+        <li><a href="about.html">About the Creator</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Judgements Section -->
+  <section class="importance">
+    <h2>Landmark Judgements</h2>
+    <p>Explore key judgements that have shaped Indian constitutional and legal history. Each summary provides a concise yet insightful understanding of the case and its implications.</p>
+  </section>
+
+  <section class="featured">
+    <ul class="case-list">
+      <li>
+        <div class="case-card">
+          <h3><a href="kesavananda-bharati.html">Kesavananda Bharati v. State of Kerala (1973)</a></h3>
+          <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
+          <a href="kesavananda-bharati.html" class="btn">View Summary</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="case-card">
+          <h3><a href="maneka-gandhi.html">Maneka Gandhi v. Union of India (1978)</a></h3>
+          <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
+          <a href="maneka-gandhi.html" class="btn">View Summary</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="case-card">
+          <h3><a href="vishaka.html">Vishaka & Ors. v. State of Rajasthan & Ors. (1997)</a></h3>
+          <p>Established workplace sexual harassment guidelines for women's protection.</p>
+          <a href="vishaka.html" class="btn">View Summary</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="case-card">
+          <h3><a href="navtej-singh.html">Navtej Singh Johar v. Union of India (2018)</a></h3>
+          <p>Decriminalized Section 377 IPC, affirming LGBTQ+ constitutional rights.</p>
+          <a href="navtej-singh.html" class="btn">View Summary</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="case-card">
+          <h3><a href="bachan-singh.html">Bachan Singh v. State of Punjab (1980)</a></h3>
+          <p>Upheld the constitutionality of the death penalty and introduced the rarest of rare doctrine.</p>
+          <a href="bachan-singh.html" class="btn">View Summary</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
+
+Original about.html - 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Précis</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #f8f9fa;
-      color: #222;
+      font-family: "Times New Roman", serif;
       margin: 0;
-      scroll-behavior: smooth;
+      background-color: #f7f7f7;
+      color: #333;
     }
 
     header {
-      background: linear-gradient(135deg, #001f3f, #0074D9);
+      background-color: #1f1f1f;
       color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 0.8rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .about-container {
+      max-width: 950px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .about-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .about-container p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .creator-section {
+      margin-top: 2.5rem;
       text-align: center;
       padding: 2rem;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: #ffffff;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #fafafa;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
-    h2 {
-      color: #001f3f;
-      border-left: 5px solid #0074D9;
-      padding-left: 10px;
-      font-size: 1.4rem;
+    .creator-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid #1f1f1f;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+    .creator-section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #1f1f1f;
     }
 
-    li {
-      margin: 1rem 0;
+    .creator-section p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
-    a {
+    .contact-section {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .contact-section a {
+      color: #333;
+      font-weight: bold;
       text-decoration: none;
-      color: #0074D9;
-      font-weight: 600;
-      transition: color 0.3s ease;
+      transition: 0.3s;
     }
 
-    a:hover {
-      color: #005fa3;
+    .contact-section a:hover {
+      color: #007acc;
     }
 
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #001f3f;
+      background-color: #1f1f1f;
       color: white;
+      padding: 1rem 0;
+      margin-top: 3rem;
       font-size: 0.9rem;
-      margin-top: 2rem;
     }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Landmark Judgements</h1>
-    <p>Explore brief, clear, and authentic summaries of key constitutional cases</p>
+    <h1>Précis</h1>
+    <p><em>A one-stop destination for Legal Professionals and Students</em></p>
   </header>
 
-  <main>
-    <section>
-      <h2>Case List</h2>
-      <ul>
-        <li><a href="kesavananda-bharati.html">Kesavananda Bharati v. State of Kerala (1973)</a></li>
-        <li><a href="maneka-gandhi.html">Maneka Gandhi v. Union of India (1978)</a></li>
-        <li><a href="vishaka.html">Vishaka v. State of Rajasthan (1997)</a></li>
-        <li><a href="navtej-singh-johar.html">Navtej Singh Johar v. Union of India (2018)</a></li>
-      </ul>
-    </section>
-  </main>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="judgements.html">Judgements</a>
+    <a href="about.html">About the Creator</a>
+  </nav>
+
+  <div class="about-container">
+    <h2>About Précis</h2>
+    <p>
+      <strong>Précis</strong> was created with a simple purpose, to make legal knowledge concise, accessible, and insightful for everyone. 
+      It is a platform where law students and professionals can find short, accurate summaries of landmark and recent judgments, 
+      designed to simplify legal research and encourage better understanding of judicial reasoning.
+    </p>
+    <p>
+      In today’s fast-paced legal ecosystem, staying updated with the latest judgments can be challenging. 
+      Précis aims to bridge that gap by providing structured case summaries that are easy to navigate, 
+      enabling readers to grasp complex legal concepts quickly and efficiently.
+    </p>
+    <p>
+      Whether you’re preparing for a moot court, writing a paper, or simply curious about how Indian courts interpret laws — 
+      Précis offers a starting point for your exploration of the Indian judiciary.
+    </p>
+
+    <div class="creator-section">
+      <img src="Shashank.jpg" alt="Shashank Chawathe" class="creator-photo" />
+      <h3>About the Creator</h3>
+      <p>
+        <strong>Shashank Chawathe</strong> is a final-year BBA LL.B. student at IFIM Law School, Bengaluru, 
+        with a strong passion for legal research, public speaking, and simplifying complex legal ideas for others. 
+        As a first-generation law student, Shashank aims to make the world of law more approachable and 
+        engaging for students and professionals alike. 
+      </p>
+      <p>
+        Précis is a reflection of his commitment to sharing knowledge and contributing to the 
+        legal community by building something valuable, practical, and enduring.
+      </p>
+    </div>
+
+    <div class="contact-section">
+      <h3>Contact</h3>
+     <p>If you have any questions, suggestions, or collaboration ideas, feel free to reach out:</p>
+      <p>Email: <a href="mailto:shashankchawathework@gmail.com">shashankchawathework@gmail.com</a></p>
+    </div>
 
   <footer>
-    <p>© 2025 Précis | Curated by Shashank Chawathe</p>
+    © 2025 Précis | Built by Shashank Chawathe
   </footer>
 </body>
 </html>
