@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Précis | Legal Judgement Summaries</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navigation Bar -->
+
+  <!-- ===== HEADER ===== -->
   <header>
     <nav class="navbar">
       <div class="logo-container">
-        <img src="logo.png" alt="Précis Logo" class="logo">
+        <img src="logo.png" alt="Précis Logo" class="logo" />
         <span class="logo-text">Précis</span>
       </div>
       <ul class="nav-links">
@@ -22,65 +24,63 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- ===== HERO SECTION ===== -->
   <section class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Précis</h1>
-      <p class="tagline">A one-stop destination for Legal Professionals and Students to find summaries of Judgements.</p>
+      <p class="tagline">Concise, reliable and insightful summaries of landmark Indian judgements — crafted for law students and professionals.</p>
+      <a href="judgements.html" class="hero-btn">Explore Judgements</a>
     </div>
   </section>
 
-  <!-- Why Case Summaries Matter -->
+  <!-- ===== WHY JUDGEMENTS MATTER ===== -->
   <section class="importance">
     <h2>Why Referring to Judgements Matters</h2>
     <p>
-      Judicial precedents form the backbone of legal understanding. They interpret statutes, define rights, and shape the principles
-      that govern society. Reading judgments isn’t limited to lawyers, it builds awareness of rights, duties, and justice in action.
+      Judicial precedents form the backbone of legal interpretation. They define constitutional boundaries, safeguard fundamental rights, 
+      and guide the evolution of law. Reading judgements isn’t confined to lawyers — it enhances civic understanding and awareness of justice in action.
     </p>
     <p>
-      For students, professionals, and citizens alike, understanding landmark judgments helps develop critical thinking and a
-      deeper respect for the rule of law. At <strong>Précis</strong>, we make these insights accessible, concise, and comprehensible.
+      At <strong>Précis</strong>, we simplify these complex legal narratives, helping students, researchers, and practitioners grasp the essence of every case — 
+      without losing depth or accuracy.
     </p>
   </section>
 
-  <!-- Featured Judgements -->
+  <!-- ===== FEATURED JUDGEMENTS ===== -->
   <section class="featured">
     <h2>Featured Judgements</h2>
-    <ul class="case-list">
-      <li>
-        <div class="case-card">
-          <h3><a href="kesavananda-bharati.html">Kesavananda Bharati v. State of Kerala (1973)</a></h3>
-          <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
-          <a href="kesavananda-bharati.html" class="btn">View Case</a>
-        </div>
-      </li>
-      <li>
-        <div class="case-card">
-          <h3><a href="maneka-gandhi.html">Maneka Gandhi v. Union of India (1978)</a></h3>
-          <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
-          <a href="maneka-gandhi.html" class="btn">View Case</a>
-        </div>
-      </li>
-      <li>
-        <div class="case-card">
-          <h3><a href="vishaka.html">Vishaka & Ors. v. State of Rajasthan & Ors. (1997)</a></h3>
-          <p>Established workplace sexual harassment guidelines for women's protection.</p>
-          <a href="vishaka.html" class="btn">View Case</a>
-        </div>
-      </li>
-      <li>
-        <div class="case-card">
-          <h3><a href="navtej-singh.html">Navtej Singh Johar v. Union of India (2018)</a></h3>
-          <p>Decriminalized Section 377 IPC, affirming LGBTQ+ constitutional rights.</p>
-          <a href="navtej-singh.html" class="btn">View Case</a>
-        </div>
-      </li>
-    </ul>
+    <div class="case-grid">
+      <div class="case-card">
+        <h3>Kesavananda Bharati v. State of Kerala (1973)</h3>
+        <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
+        <a href="kesavananda-bharati.html" class="btn">View Case</a>
+      </div>
+
+      <div class="case-card">
+        <h3>Maneka Gandhi v. Union of India (1978)</h3>
+        <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
+        <a href="maneka-gandhi.html" class="btn">View Case</a>
+      </div>
+
+      <div class="case-card">
+        <h3>Vishaka & Ors. v. State of Rajasthan & Ors. (1997)</h3>
+        <p>Established workplace sexual harassment guidelines for women's protection.</p>
+        <a href="vishaka.html" class="btn">View Case</a>
+      </div>
+
+      <div class="case-card">
+        <h3>Navtej Singh Johar v. Union of India (2018)</h3>
+        <p>Decriminalized Section 377 IPC, affirming LGBTQ+ constitutional rights.</p>
+        <a href="navtej-singh.html" class="btn">View Case</a>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2025 Précis | Created by Shashank Chawathe</p>
+    <p>© 2025 Précis | Curated by Shashank Chawathe</p>
   </footer>
+
 </body>
 </html>
