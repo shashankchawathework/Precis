@@ -6,6 +6,12 @@
   <title>Judgements | Précis</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
     header {
       background-color: #1f1f1f;
       color: white;
@@ -29,6 +35,81 @@
     nav a.active {
       color: #ffd700;
     }
+    .importance {
+      max-width: 950px;
+      margin: 3rem auto 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .importance h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .importance p {
+      font-size: 1.1rem;
+      color: #555;
+      margin: 0 auto;
+      max-width: 750px;
+    }
+    .featured {
+      max-width: 1100px;
+      margin: 1.4rem auto 2.5rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 1.7rem;
+      padding: 0 2rem;
+    }
+    .case-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.3rem 1.1rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .case-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+    }
+    .case-card h3 {
+      color: #002147;
+      margin-bottom: 0.4rem;
+      font-size: 1.12rem;
+    }
+    .case-card p {
+      color: #555;
+      margin: 0 0 0.7rem 0;
+      font-size: 1.02rem;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #002147;
+      color: white;
+      text-decoration: none;
+      padding: 0.56rem 1.19rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-top: auto;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background: #ffd700;
+      color: #002147;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      background-color: #1f1f1f;
+      color: white;
+      padding: 1rem 0;
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
@@ -49,39 +130,31 @@
   </section>
 
   <section class="featured">
-    <ul class="case-list">
-      <li>
-        <div class="case-card">
-          <h3><a href="kesavananda-bharati.html">Kesavananda Bharati v. State of Kerala (1973)</a></h3>
-          <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
-          <a href="kesavananda-bharati.html" class="btn">View Summary</a>
-        </div>
-      </li>
-      <li>
-        <div class="case-card">
-          <h3><a href="maneka-gandhi.html">Maneka Gandhi v. Union of India (1978)</a></h3>
-          <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
-          <a href="maneka-gandhi.html" class="btn">View Summary</a>
-        </div>
-      </li>
-      <li>
-        <div class="case-card">
-          <h3><a href="vishaka.html">Vishaka & Ors. v. State of Rajasthan & Ors. (1997)</a></h3>
-          <p>Established workplace sexual harassment guidelines for women's protection.</p>
-          <a href="vishaka.html" class="btn">View Summary</a>
-        </div>
-      </li>
-      <li>
-        <div class="case-card">
-          <h3><a href="navtej-singh.html">Navtej Singh Johar v. Union of India (2018)</a></h3>
-          <p>Decriminalized Section 377 IPC, affirming LGBTQ+ constitutional rights.</p>
-          <a href="navtej-singh.html" class="btn">View Summary</a>
-        </div>
-      </li>
-      <!-- Add more cases as needed -->
-    </ul>
+    <div class="case-card">
+      <h3><a href="kesavananda-bharati.html">Kesavananda Bharati v. State of Kerala (1973)</a></h3>
+      <p>Established the Basic Structure Doctrine, limiting Parliament’s power to amend the Constitution.</p>
+      <a href="kesavananda-bharati.html" class="btn">View Summary</a>
+    </div>
+    <div class="case-card">
+      <h3><a href="maneka-gandhi.html">Maneka Gandhi v. Union of India (1978)</a></h3>
+      <p>Expanded the interpretation of Article 21 — Right to Life and Personal Liberty.</p>
+      <a href="maneka-gandhi.html" class="btn">View Summary</a>
+    </div>
+    <div class="case-card">
+      <h3><a href="vishaka.html">Vishaka & Ors. v. State of Rajasthan & Ors. (1997)</a></h3>
+      <p>Established workplace sexual harassment guidelines for women's protection.</p>
+      <a href="vishaka.html" class="btn">View Summary</a>
+    </div>
+    <div class="case-card">
+      <h3><a href="navtej-singh.html">Navtej Singh Johar v. Union of India (2018)</a></h3>
+      <p>Decriminalized Section 377 IPC, affirming LGBTQ+ constitutional rights.</p>
+      <a href="navtej-singh.html" class="btn">View Summary</a>
+    </div>
+    <!-- Add more cases here as needed -->
   </section>
 
   <footer>
     <p>© 2025 Précis | Created by Shashank Chawathe</p>
-  </footer
+  </footer>
+</body>
+</html>
