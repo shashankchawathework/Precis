@@ -5,22 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Précis | Legal Judgement Summaries</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      padding: 0.8rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover,
+    nav a.active {
+      color: #ffd700;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
   <header>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="logo.png" alt="Précis Logo" class="logo">
-        <span class="logo-text">Précis</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="judgements.html">Judgements</a></li>
-        <li><a href="about.html">About the Creator</a></li>
-      </ul>
-    </nav>
+    <h1>Précis</h1>
+    <p><em>A one-stop destination for Legal Professionals and Students</em></p>
   </header>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="judgements.html">Judgements</a>
+    <a href="about.html">About the Creator</a>
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero">
